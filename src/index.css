@@ -1,0 +1,351 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*=================================================
+all the class name include with 'custom' word,
+but tag name has no change
+===================================================*/
+
+/*=================================================
+style for the whole website and all screen
+===================================================*/
+body{
+    background-color: white;
+    color: #071952;
+    font-family: 'Lato', sans-serif;
+    
+    
+}
+
+.laptop-header-parent-position{
+    position: relative;
+}
+.laptop-header-position{
+    position: sticky;
+    top: 0px;
+}
+.mobile-menu-parent-position{
+    position: relative;
+    
+}
+
+.color{
+    color: #071952;
+}
+.custom-background{
+    background-color: #071952;
+}
+.index{
+    z-index: 9999;
+}
+
+/*=================================================
+header,footer
+===================================================*/
+
+header,footer{
+    background-color: #071952;
+}
+footer{
+    margin-top: 35px;
+}
+.header-custom-row, .footer-custom-row{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*=================================================
+common website feature like logo menu image
+===================================================*/
+.custom-logo{
+    width: 120px;
+    height: auto;
+ }
+ .custom-image{
+    width: 360px;
+    height: 360px;  
+}
+ .custom-laptop-menu{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+ }
+ .custom-laptop-menu a{
+    font-size: 18px;
+    font-weight: bold;
+    
+ }
+
+ .mobile-menu a:hover, .custom-laptop-menu a:hover{
+    border-bottom: 4px solid gray;
+ }
+ .custom-mobile-menu{
+    font-size: 25px;
+    margin-top: 15px;
+    display: none;
+ }
+ .mobile-menu-position{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    background-color: #071952;
+ }
+
+/*=================================================
+css box model
+===================================================*/
+section{
+    margin-top: 35px;
+}
+.custom-container{
+    padding: 5px 10px;
+    width: 1024px;
+    margin: 0 auto;
+ }
+.custom-header-footer-container{
+    padding: 5px 10px;
+    width: 1100px;
+    margin: 0 auto;
+ }
+ .custom-row{
+     padding: 5px 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ .custom-column{
+     padding: 5px 10px;
+ }
+ /*=================================================
+different types of font size according to tag name
+===================================================*/
+ h1{
+     font-size: 72px;
+     font-weight: bold;
+ }
+ h2{
+     font-size: 60px;
+     font-weight: bold;
+ }
+ h3{
+     font-size: 48px;
+     font-weight: bold;
+ }
+ h4{
+     font-size: 20px;
+     font-weight: bold;
+ }
+ p,button{
+     font-size: 18px;
+ }
+ h1,h2,h3,h4,p,b{
+    margin: 6px 0px;
+ }
+ /*=================================================
+tablet screen======================================
+===================================================*/
+@media only screen and (max-width: 768px) and (min-width: 641px)   {
+    section{
+        margin-top: 0px;
+    }
+    .custom-logo{
+        width: 100px;
+        height: auto;
+     }
+     .custom-image{
+        width: 320px;
+        height: 320px;
+        margin-left: auto;
+        margin-right: auto;
+            
+    }
+     .custom-laptop-menu{
+        display: none;
+     }
+     .custom-mobile-menu{
+        display: inline;
+        font-size: 23px;
+     }
+    .custom-container{
+        padding: 0px 50px;
+        width: 100%;
+        margin: 0 auto;
+     }
+     .custom-row{
+        display: inline;
+         padding: 0px 10px;
+         width: 100%;
+         margin: 0 auto;
+     }
+     .custom-column{
+         padding: 0px 10px;
+     }
+     
+     h1{
+        font-size: 60px;
+        font-weight: bold;
+        text-align: left;
+    }
+    h2{
+        font-size: 48px;
+        font-weight: bold;
+      
+    }
+    h3{
+        font-size: 36px;
+        font-weight: bold;
+        
+    }
+    h4,p,button{
+        font-size: 18px;
+        
+    }
+     h1,h2,h3,h4,p,b{
+        margin: 4px 0px;
+        text-align: center;
+        
+     }
+     /* dynamic code start from here and it will be change project by project*/ 
+     .tablet-button{
+        display: flex;
+        justify-content: center;
+     }
+     .tablet-social-link{
+        display: flex;
+        justify-content: center;
+     }
+     
+    .tablet-custom-image{
+        margin-top: 50px;
+    }
+     /* dynamic code end from here and it will be change project by project*/ 
+}
+
+
+/*=================================================
+mobile screen=====================================
+===================================================*/
+@media only screen and (max-width: 640px) and (min-width: 0px) {
+    section{
+        margin-top: 0px;
+    }
+    .custom-logo{
+        width: 75px;
+        height: auto;
+     }
+     .custom-image{
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+            
+    }
+     .custom-laptop-menu{
+        display: none;
+     }
+     .custom-mobile-menu{
+        display: inline;
+        font-size: 20px;
+     }
+    .custom-container{
+        padding: 5px 50px;
+        width: 100%;
+        margin: 0 auto;
+     }
+     .custom-row{
+        display: inline;
+         padding: 5px 10px;
+         width: 100%;
+         margin: 0 auto;
+     }
+     .custom-column{
+         padding: 5px 10px;
+     }
+     
+     h1{
+        font-size: 48px;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: bold;
+    }
+    h3{
+        font-size: 18px;
+        font-weight: bold;
+    }
+    h4,p,button{
+        font-size: 16px;
+    }
+     h1,h2,h3,h4,p,b{
+        margin: 2px 0px;
+        text-align: center;
+     }
+    /* dynamic code start from here and it will be change project by project*/ 
+     .tablet-custom-image{
+        margin-top:35px;
+    }
+     .tablet-button{
+        display: flex;
+        justify-content: center;
+     }
+     .tablet-social-link{
+        display: flex;
+        justify-content: center;
+     }
+     /* dynamic code end from here and it will be change project by project*/ 
+    }
+
+
+    /***************************delete**************************/
+
+
+
+
+
+/*=================================================
+here are all dynamic css code which will be change 
+different project by project
+===================================================*/
+.social{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+   
+ }
+ .button{
+    border: 4px solid #071952;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-top: 20px;
+ }
+ .button:hover{
+    background-color: #071952;
+ }
+
+ .custom-button-2{
+    color: #071952;
+ }
+ .custom-button-2:hover{
+    background-color: transparent;
+    border: 4px solid #071952;
+ }
+
+
+.custom-border{
+    
+    border-bottom: 4px solid #071952;
+}
+
+
+ /*Code for rakib sir portfolio*/
+ .profile{
+    border: 4px solid #071952;
+    border-radius: 50%;
+
+ }
